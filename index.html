@@ -1,236 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MY PORTFOLIO</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(90deg, #8e44ad, #3498db);
-      color: white;
-      padding: 40px 0;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.8rem;
-      letter-spacing: 1px;
-    }
-
-    nav {
-      background: #ffffff;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      text-align: center;
-      padding: 10px 0;
-    }
-
-    nav a {
-      margin: 10px;
-      text-decoration: none;
-      color: #555;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      color: #8e44ad;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    .profile-img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      display: block;
-      margin: 0 auto 30px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    section {
-      margin-bottom: 40px;
-      padding: 30px;
-      background: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-
-    section h2, section h3 {
-      margin-top: 0;
-      color: #8e44ad;
-      text-align: center;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .row {
-      display: block;
-      margin-bottom: 20px;
-    }
-
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      margin: 20px auto;
-    }
-
-    th, td {
-      border: 1px solid #ccc;
-      padding: 12px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #f2f2f2;
-    }
-
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 60px;
-    }
-
-    #contact a {
-      color: #3498db;
-      text-decoration: none;
-    }
-
-    form input {
-      padding: 8px;
-      width: 60%;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    form button {
-      padding: 10px 20px;
-      background-color: #8e44ad;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    form button:hover {
-      background-color: #732d91;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">MY PORTFOLIO</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experiences</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-  <header>
-    <h1><strong>Javeria Ijaz</strong></h1>
-  </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="floating-shapes">
+            <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+            <div class="shape shape3"></div>
+            <div class="shape shape4"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Hello, I'm <span class="highlight">Software Developer</span>
+            </h1>
+            <p class="hero-subtitle">
+                Creating outstanding digital experiences with modern technologies and innovative solutions. 
+                Passionate about turning ideas into reality through clean, efficient code.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
 
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#Experiences">Experience</a>
-    <a href="#contactme">Contact Me</a>
-    <a href="#Socials">Socials</a>
-  </nav>
+    <!-- About Section -->
+<section id="about" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>About Me</h2>
+            <p>Passionate developer with expertise in creating scalable, user-centered applications</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Crafting Digital Excellence</h3>
+                <p>With over great passion of dissolving ideas in web development, I specialize in creating modern, responsive applications using cutting-edge technologies. My passion lies in solving complex problems and delivering exceptional user experiences.</p>
+                <p>I believe in writing clean, maintainable code and staying up-to-date with the latest industry trends. My goal is to create digital solutions that not only meet technical requirements but also delight users.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">Fresh</div>
+                        <div class="stat-label">Expertise</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">Happy Mentoring Chunks</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="image-wrapper">
+                    <img src="81af1196-4830-4421-abba-d60aa454740d.jpg" width="100" height="100" border-radius="50%" class="profile-img">
+                    <div class="image-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+       
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Skills & Expertise</h2>
+                <p>Technologies and skills I use to bring ideas to life</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JavaScript, React, Vue.js, responsive design and modern UI frameworks.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                    <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>User interface design, user experience optimization, wireframing and prototyping.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h3>SQA And Analyst Developer</h3>
+                    <p>HDD, LDD, Functional and Non functional Testing,UML DIAGRAMS.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📱</div>
+                    <h3>DATA ANNOTATOR AND PYTHON SCRIPTER </h3>
+                    <p>TOOLS(VISION,VOTT,JIRA).</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Projects Section -->
+<section id="projects" class="section">
   <div class="container">
-    <img src="81af1196-4830-4421-abba-d60aa454740d.jpg" alt="Profile Picture" class="profile-img">
+    <div class="section-title">
+      <h2>Featured Projects</h2>
+      <p>A showcase of my recent work and creative solutions</p>
+    </div>
 
-    <main>
+    <div class="projects-grid">
+      <!-- Card 1 -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="ecommerce.jpeg" alt="PAYROLL MANAGEMENT SYSTEM">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="https://github.com/Javeria-Ijaz30/C-PLUS-PLUS-Projects-.git" class="project-link">Live Demo</a>
+              <a href="https://github.com/Javeria-Ijaz30/C-PLUS-PLUS-Projects-.git" class="project-link">Source Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>PAYROLL MANAGEMENT SYSTEM</h3>
+          <p>A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include real-time inventory, payment processing, and advanced analytics.</p>
+          <div class="project-tech">
+            <span class="tech-tag">C++</span>
+            <span class="tech-tag">OOP</span>
+            <span class="tech-tag">DSA</span>
+            <span class="tech-tag">OPEN CV</span>
+          </div>
+        </div>
+      </div>
 
-      <section id="about">
-        <h2><u>About Me</u></h2>
-        <p>I'm a Computer Science student from UET Lahore with experience in AI, ML, Web Development, and Software Engineering. I specialize in SDLC, STLC, NLP, and facial recognition systems. I love solving real-world problems through code and I'm currently seeking opportunities where I can contribute and grow.</p>
-      </section>
+      <!-- Card 2 (fixed class names) -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="ai jpeg.jpeg" alt="AI Dashboard">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="https://github.com/Javeria-Ijaz30/.NET-PROJECTS.git" class="project-link">Live Demo</a>
+              <a href="https://github.com/Javeria-Ijaz30/.NET-PROJECTS.git" class="project-link">Source Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>UET BUS ALUMNI SYSTEM</h3>
+          <p>C#, MVC, .NET desktop application covering alumni bus record needs.</p>
+          <div class="project-tech">
+            <span class="tech-tag">C#</span>
+            <span class="tech-tag">MVC</span>
+            <span class="tech-tag">.NET</span>
+            <span class="tech-tag">Windows</span>
+          </div>
+        </div>
+      </div>
 
-      <section id="skills">
-        <h3><u>Skills</u></h3>
-        <ul>
-          <li><b>Python</b></li>
-          <li><b>C++ / C / C#</b></li>
-          <li><b>WPF.Net</b></li>
-          <li><b>SQL</b></li>
-          <li><b>NLP (Natural Language Processing)</b></li>
-          <li><b>Web Development</b></li>
-        </ul>
-      </section>
-
-      <section id="projects">
-        <h3><u>Projects</u></h3>
-        <ul>
-          <li><strong>Urdu Text Summarization Model</strong></li>
-          <li><strong>Facial Recognition Attendance System</strong></li>
-          <li><strong>UET Bus Alumni System</strong></li>
-          <li><strong>Payroll Management System</strong></li>
-        </ul>
-      </section>
-
-      <section id="Experiences">
-        <h3><u>Experiences</u></h3>
-        <table>
-          <tr>
-            <th>Company</th>
-            <th>Role</th>
-            <th>Year</th>
-          </tr>
-          <tr>
-            <td>CLE, UET LAHORE</td>
-            <td>Data Annotator</td>
-            <td>2024</td>
-          </tr>
-          <tr>
-            <td>Commonwealth Bank</td>
-            <td>Tech Explorer</td>
-            <td>2025</td>
-          </tr>
-          <tr>
-            <td>Forage</td>
-            <td>Software Engineering Simulator</td>
-            <td>2025</td>
-          </tr>
-        </table>
-      </section>
-
-      <section id="Socials">
-        <h3><u>Socials</u></h3>
-        <p>GitHub: <a href="https://javeria-ijaz30.github.io/Portfolio2/" target="_blank">github.com/Javeria-Ijaz301</a></p>
-        <p>Email: <a href="mailto:khanjaveria734@gmail.com" target="_blank">khanjaveria734@gmail.com</a></p>
-        <p>LinkedIn: <a href="http://www.linkedin.com/in/javeria-i-829715203" target="_blank">linkedin.com/in/javeria-i-829715203</a></p>
-      </section>
-
-      <section id="contactme">
-        <h3><u>Message</u></h3>
-        <form>
-          <p><label>Name:<br><input type="text" name="name" /></label></p>
-          <p><label>Email:<br><input type="email" name="email" /></label></p>
-          <p><button type="submit">SEND</button></p>
-        </form>
-      </section>
-
-    </main>
+      <!-- Card 3 -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="download.jpeg" alt="FACE RECOGNITION SYSTEM">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="https://github.com/Javeria-Ijaz30/PYTHON.git" class="project-link">Live Demo</a>
+              <a href="https://github.com/Javeria-Ijaz30/PYTHON.git" class="project-link">Source Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>FACE RECOGNITION SYSTEM</h3>
+          <p>Face recognition attendance using OpenCV and Keras.</p>
+          <div class="project-tech">
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">Keras</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">AI</span>
+          </div>
+        </div>
+      </div>
+<!-- Project Card 5: NLP Urdu Text Summarization -->
+<div class="project-card">
+  <div class="project-image">
+    <img src="download (2).jpeg" alt="NLP Urdu Text Summarization">
+    <div class="project-overlay">
+      <div class="project-links">
+        <a href="https://github.com/Javeria-Ijaz30/NLP-Urdu-Text-Summarization-Model.git" class="project-link" target="_blank">Source Code</a>
+      </div>
+    </div>
   </div>
+  <div class="project-content">
+    <h3>NLP Urdu Text Summarization</h3>
+    <p>An NLP model that generates concise summaries of Urdu text using modern techniques (e.g. transformer-based architectures).</p>
+    <div class="project-tech">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">NLP</span>
+      <span class="tech-tag">Transformers</span>
+      <span class="tech-tag">Machine Learning</span>
+    </div>
+  </div>
+</div>
 
-  <footer>
-    <p>&copy; 2025 All rights reserved | Designed by Javeria Ijaz</p>
-  </footer>
+      <!-- Card 4 (moved INSIDE the grid) -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="download (1).jpeg" alt="DOCUMENT CLASSIFICATION SYSTEM">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="https://github.com/Javeria-Ijaz30/DOCUMENT-CLASSIFICATION-SYSTEM.git" class="project-link">Live Demo</a>
+              <a href="https://github.com/Javeria-Ijaz30/DOCUMENT-CLASSIFICATION-SYSTEM.git" class="project-link">Source Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>DOCUMENT CLASSIFICATION SYSTEM</h3>
+          <p>Python + TF-IDF + KNN for auto-classifying scraped text (news, articles, papers).</p>
+          <div class="project-tech">
+            <span class="tech-tag">TF-IDF</span>
+            <span class="tech-tag">KNN</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">ML</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="section experience-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>My Experience</h2>
+          <p class="colour1">Professional experiences that shaped my career</p>
+        </div>
+        <div class="experience-grid">
+            <div class="experience-card">
+                <h3>Intern - Kicks Department, UET</h3>
+                <p>Assisted in developing and maintaining web applications, focusing on user experience and functionality.</p>
+                <span class="experience-date">June 2024 - September 2024</span>
+            </div>
+            <div class="experience-card">
+                <h3>Software Engineer Simulator - Commonwealth Bank of Australia</h3>
+                <p>Participated in a simulation program to develop software solutions, enhancing skills in coding and problem-solving.</p>
+                <span class="experience-date">April 2025</span>
+            </div>
+            <div class="experience-card">
+                <h3>Tech Explorer - Electronic Arts</h3>
+                <p>Explored emerging technologies and their applications in gaming, contributing to innovative project ideas.</p>
+                <span class="experience-date">April 2025</span>
+            </div>
+            <div class="experience-card">
+                <h3>Business Developer Intern - Code Celix</h3>
+                <p>Worked on business development strategies, focusing on client acquisition and market research.</p>
+                <span class="experience-date">June 2025- July 2025</span>
+            </div>
+            <div class="experience-card">
+                <h3>Business Analyst - Viral Square</h3>
+                <p>Analyzed business processes and provided insights to improve efficiency and effectiveness.</p>
+                <span class="experience-date">August 2025 - Present</span>
+            </div>
+            <div class="experience-card">
+                <h3>Recruitment Specialist - Lewoint</h3>
+                <p>Managed recruitment processes, focusing on talent acquisition and candidate engagement.</p>
+                <span class="experience-date">August 2025 - Present</span>
+            </div>
+            <div class="experience-card">
+                <h3>Microsoft Word Specialist - Microsoft</h3>
+                <p>Take training as microsoft Word specialist from Punjab Group Of Colleges,GAve out the exam and passed it with first divison and then gave trainings to other students to pass that exam</p>
+                <span class="experience-date">August 2020</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Let's Work Together</h2>
+                <p>Ready to bring your ideas to life? Let's discuss your next project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>khanjaveria734@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>03490164908</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Lahore,Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <h3>MY PORTFOLIO</h3>
+                    <p>Creating exceptional digital experiences</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="GitHub">
+                        <span>🐙</span>
+                    </a>
+                    <a href="#" class="social-link" title="LinkedIn">
+                        <span>💼</span>
+                    </a>
+                    <a href="#" class="social-link" title="Twitter">
+                        <span>🐦</span>
+                    </a>
+                    <a href="#" class="social-link" title="Instagram">
+                        <span>📸</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
 
 </body>
 </html>
-
-
